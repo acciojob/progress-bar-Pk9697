@@ -14,7 +14,7 @@
 
 .circles{
 	display:flex;
-	gap:2em;
+	/* gap:2em; */
 }
 
 .circle{
@@ -30,6 +30,22 @@
 
 .active{
 	border-color:deepskyblue;
+}
+
+.line-container{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.line {
+  height: 4px;
+  background-color: lightgray;
+  width: 50px;
+}
+
+.line-active{
+	background-color: deepskyblue;
 }
 
 .buttons{

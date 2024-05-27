@@ -9,6 +9,10 @@ nextBtn.addEventListener('click',()=>{
 	if(currentCircleCount+1<=5){
 		const currentCircle=document.getElementById(`circle-${currentCircleCount+1}`)
 		currentCircle.classList.add('active')
+	
+		const currentLine=document.getElementById(`line-${currentCircleCount+1}`)
+		currentLine.classList.add('line-active')
+		
 		++currentCircleCount
 	}
 
@@ -27,6 +31,10 @@ prevBtn.addEventListener('click',()=>{
 	if(currentCircleCount>1){
 		const currentCircle=document.getElementById(`circle-${currentCircleCount}`)
 		currentCircle.classList.remove('active')
+
+		const currentLine=document.getElementById(`line-${currentCircleCount}`)
+		currentLine.classList.remove('line-active')
+		
 		--currentCircleCount
 	}
 
